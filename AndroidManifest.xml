@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="32" android:compileSdkVersionCodename="12" android:sharedUserId="android.uid.system" package="com.innioasis.y1" platformBuildVersionCode="32" platformBuildVersionName="12">
+    <uses-permission android:name="android.permission.REBOOT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.SHUTDOWN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.MASTER_CLEAR"/>
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.SET_TIME_ZONE"/>
+    <uses-permission android:name="android.permission.SET_TIME"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.DELETE_CACHE_FILES"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.ACCESS_FM_RADIO"/>
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+    </queries>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.innioasis.y1.Y1Application" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Y1">
+        <activity android:exported="false" android:name="com.innioasis.y1_calendar.ui.CalendarActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1_calculator.ui.CalculatorActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.theme.ThemeListActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.innioasis.y1.activity.SplashActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.PhotosActivity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.innioasis.music.ShowSongListActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.music.PlaylistsActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.music.SearchActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.WallpaperListActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.WallpaperActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.DateTwoLevelActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.DateOneLevelActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.AboutActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.LanguageActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.innioasis.y1.activity.AudioPlayerActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.BrightnessActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1.activity.SettingActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.music.MusicPlayerActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.innioasis.y1.activity.MainActivity"/>
+        <activity android:name="com.innioasis.y1.activity.video.SearchVideoActivity"/>
+        <activity android:keepScreenOn="true" android:name="com.innioasis.y1.activity.video.VideoActivity"/>
+        <activity android:name="com.innioasis.y1.activity.video.VideoListActivity"/>
+        <activity android:name="com.innioasis.y1.activity.AllAudiobooksActivity"/>
+        <activity android:name="com.innioasis.y1.activity.SetupActivity"/>
+        <activity android:name="com.innioasis.y1.activity.PlayerActivity"/>
+        <activity android:name="com.innioasis.y1.activity.EbookActivity"/>
+        <activity android:name="com.innioasis.y1.activity.BookMarkActivity"/>
+        <activity android:name="com.innioasis.y1.activity.BluetoothActivity"/>
+        <activity android:name="com.innioasis.y1.activity.EqActivity"/>
+        <activity android:name="com.innioasis.music.AlbumsActivity"/>
+        <activity android:name="com.innioasis.music.ArtistsActivity"/>
+        <activity android:name="com.innioasis.music.FilesActivity"/>
+        <activity android:name="com.innioasis.music.GenresActivity"/>
+        <activity android:name="com.innioasis.music.MusicMainActivity"/>
+        <activity android:name="com.innioasis.music.PlayListActivity"/>
+        <activity android:name="com.innioasis.music.SongListActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1_eBook.ui.text.TextActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1_eBook.ui.word.WordActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1_eBook.ui.epub.EpubActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1_eBook.ui.pdf.PdfActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.y1_eBook.ui.main.MainActivity"/>
+        <activity android:exported="true" android:name="com.innioasis.y1_eBook.ui.search.SearchActivity"/>
+        <receiver android:exported="true" android:name="com.innioasis.y1.utils.SDReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.innioasis.y1.receiver.PlayControllerReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.innioasis.y1.service.StateBarService"/>
+        <service android:enabled="true" android:exported="true" android:name="com.innioasis.fm.FmRadioService" android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="com.mediatek.fm.FmRadioService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.innioasis.fm.MenuActivity"/>
+        <activity android:exported="false" android:name="com.innioasis.fm.FMMainActivity"/>
+        <service android:name="com.innioasis.y1.service.PlayerService"/>
+        <receiver android:exported="true" android:name="com.innioasis.y1.receiver.BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.innioasis.y1.receiver.AutoShutdownReceiver">
+            <intent-filter>
+                <action android:name="com.innioasis.AUTO_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.innioasis.y1.receiver.UnmountSdcardReceiver">
+            <intent-filter>
+                <action android:name="com.innioasis.y1.PRE_UNMOUNT_SDCARD"/>
+                <action android:name="com.innioasis.y1.PRE_MOUNT_SDCARD"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:multiprocess="true" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.innioasis.y1.utilcode.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.blankj.utilcode.util.UtilsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="com.innioasis.y1.messenger"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.innioasis.y1.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+    </application>
+</manifest>

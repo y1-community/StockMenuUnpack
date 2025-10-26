@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/item_video_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/video_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="72.0dip">
+        <ImageView android:id="@id/video_img" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:adjustViewBounds="true" android:layerType="hardware" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/video_name" android:layout_width="400.0dip" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:maxLines="1" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/video_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/file_layout" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <ImageView android:id="@id/file_img" android:padding="6.0dip" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:adjustViewBounds="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/file_name" android:layout_width="400.0dip" android:layout_height="wrap_content" android:maxLines="1" android:layout_marginEnd="30.0dip" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|center" android:id="@id/iv_arrow" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:src="@mipmap/right_arrow" android:adjustViewBounds="true" android:layout_marginEnd="10.0dip" />
+</FrameLayout>

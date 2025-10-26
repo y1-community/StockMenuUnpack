@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/continue_reading" layout="@layout/item_book_main" />
+    <include android:id="@id/local_files" layout="@layout/item_book_main" />
+    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/book_library" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/book_library" />
+    <View android:background="#ff2a2a2a" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

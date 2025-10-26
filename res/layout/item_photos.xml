@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_sel" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="75.0dip" android:layout_marginBottom="-5.0dip" android:src="@drawable/bg_photos_sel" android:layout_marginEnd="-5.0dip" app:layout_constraintBottom_toBottomOf="@id/card" app:layout_constraintEnd_toEndOf="@id/card" />
+        <androidx.cardview.widget.CardView android:id="@id/card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_centerInParent="true" app:cardBackgroundColor="#00000000" app:cardCornerRadius="5.0dip" app:cardElevation="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:layout_gravity="center" android:id="@id/img" android:layout_width="100.0dip" android:layout_height="75.0dip" android:scaleType="centerCrop" android:adjustViewBounds="true" android:maxWidth="100.0dip" android:maxHeight="75.0dip" android:layout_centerInParent="true" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="6.0dip" />
+</LinearLayout>

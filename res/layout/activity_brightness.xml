@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/page_brightness" app:layout_constraintTop_toTopOf="parent" />
+    <View android:background="#65ffffff" android:layout_width="0.0dip" android:layout_height="5.0dip" app:layout_constraintBottom_toBottomOf="@id/brightness_pb" app:layout_constraintLeft_toLeftOf="@id/brightness_pb" app:layout_constraintRight_toRightOf="@id/brightness_pb" app:layout_constraintTop_toTopOf="@id/brightness_pb" />
+    <ProgressBar android:id="@id/brightness_pb" android:layout_width="fill_parent" android:layout_height="10.0dip" android:max="100" android:progressDrawable="@drawable/brightness_bg" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/brightness_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

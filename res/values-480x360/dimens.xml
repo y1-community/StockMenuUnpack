@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_icon_width">220.0dip</dimen>
+    <dimen name="main_item_height">45.0dip</dimen>
+    <dimen name="main_item_margin_left">0.0dip</dimen>
+    <dimen name="main_item_padding">5.0dip</dimen>
+    <dimen name="player_ab_icon_width">50.0dip</dimen>
+    <dimen name="player_ab_repeat_view_height">66.0dip</dimen>
+    <dimen name="player_b_question_icon_width">17.0dip</dimen>
+    <dimen name="player_cover_bg_wh">225.0dip</dimen>
+    <dimen name="player_cover_view_wh">225.0dip</dimen>
+    <dimen name="player_icon_wh">30.0dip</dimen>
+    <dimen name="player_info_padding">5.0dip</dimen>
+    <dimen name="player_progress_height">36.0dip</dimen>
+    <dimen name="progress_dot_rate">3.0dip</dimen>
+    <dimen name="setting_width">285.0dip</dimen>
+    <dimen name="status_bar_height">45.0dip</dimen>
+    <dimen name="submenu_width">200.0dip</dimen>
+</resources>

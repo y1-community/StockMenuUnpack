@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/layout" android:background="#ff292929" android:layout_width="fill_parent" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:textColor="@color/black" android:gravity="center" android:orientation="vertical" android:id="@id/item_chapter" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/item_chapter_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_book_setting_chapter" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/item_chapter_tv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/book_setting_chapter" />
+    </LinearLayout>
+    <LinearLayout android:textColor="@color/black" android:gravity="center" android:orientation="vertical" android:id="@id/item_bookmark_add" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/item_bookmark_add_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_book_setting_mark_add" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/item_bookmark_add_tv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/book_setting_mark_add" />
+    </LinearLayout>
+    <LinearLayout android:textColor="@color/black" android:gravity="center" android:orientation="vertical" android:id="@id/item_bookmark_list" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/item_bookmark_list_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_book_setting_mark_list" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/item_bookmark_list_tv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/book_setting_mark_list" />
+    </LinearLayout>
+    <LinearLayout android:textColor="@color/black" android:gravity="center" android:orientation="vertical" android:id="@id/item_font_big" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/item_font_big_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_book_setting_font_big" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/item_font_big_tv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/book_setting_font_big" />
+    </LinearLayout>
+    <LinearLayout android:textColor="@color/black" android:gravity="center" android:orientation="vertical" android:id="@id/item_font_small" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/item_font_small_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_book_setting_font_small" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/item_font_small_tv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/book_setting_font_small" />
+    </LinearLayout>
+    <LinearLayout android:textColor="@color/black" android:gravity="center" android:orientation="vertical" android:id="@id/item_theme" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/item_theme_img" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/icon_book_setting_theme" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/item_theme_tv" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/book_setting_theme" />
+    </LinearLayout>
+</LinearLayout>

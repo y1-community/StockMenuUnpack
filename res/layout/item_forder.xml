@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_name" android:background="@drawable/forder_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/tv_forder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/iv_name" android:layout_centerVertical="true" android:layout_marginStart="30.0dip" />
+</RelativeLayout>

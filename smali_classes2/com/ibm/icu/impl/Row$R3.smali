@@ -1,0 +1,87 @@
+.class public Lcom/ibm/icu/impl/Row$R3;
+.super Lcom/ibm/icu/impl/Row;
+.source "Row.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ibm/icu/impl/Row;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "R3"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<C0:",
+        "Ljava/lang/Object;",
+        "C1:",
+        "Ljava/lang/Object;",
+        "C2:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lcom/ibm/icu/impl/Row<",
+        "TC0;TC1;TC2;TC2;TC2;>;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TC0;TC1;TC2;)V"
+        }
+    .end annotation
+
+    .line 46
+    invoke-direct {p0}, Lcom/ibm/icu/impl/Row;-><init>()V
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    aput-object p1, v0, v1
+
+    const/4 p1, 0x1
+
+    aput-object p2, v0, p1
+
+    const/4 p1, 0x2
+
+    aput-object p3, v0, p1
+
+    .line 47
+    iput-object v0, p0, Lcom/ibm/icu/impl/Row$R3;->items:[Ljava/lang/Object;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic cloneAsThawed()Ljava/lang/Object;
+    .locals 1
+
+    .line 45
+    invoke-super {p0}, Lcom/ibm/icu/impl/Row;->cloneAsThawed()Lcom/ibm/icu/impl/Row;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public bridge synthetic freeze()Ljava/lang/Object;
+    .locals 1
+
+    .line 45
+    invoke-super {p0}, Lcom/ibm/icu/impl/Row;->freeze()Lcom/ibm/icu/impl/Row;
+
+    move-result-object v0
+
+    return-object v0
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="g_default_loading_fg">
+        <item>#ff00bcd4</item>
+        <item>#ff9c27b0</item>
+        <item>#ff5677fc</item>
+        <item>#ffff9800</item>
+        <item>#ffe91e63</item>
+    </array>
+</resources>

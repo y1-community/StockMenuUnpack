@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:background="#ff292929" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:text="@string/book_setting_theme" />
+    <View android:background="#ff545454" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="6.0dip" android:layout_marginEnd="6.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip" android:layout_marginTop="10.0dip">
+        <ImageView android:id="@id/item_theme_img_0" android:layout_width="0.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_book_theme_0" android:layout_weight="1.0" />
+        <ImageView android:id="@id/item_theme_img_1" android:layout_width="0.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_book_theme_1" android:layout_weight="1.0" />
+        <ImageView android:id="@id/item_theme_img_2" android:layout_width="0.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_book_theme_2" android:layout_weight="1.0" />
+        <ImageView android:id="@id/item_theme_img_3" android:layout_width="0.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_book_theme_3" android:layout_weight="1.0" />
+        <ImageView android:id="@id/item_theme_img_4" android:layout_width="0.0dip" android:layout_height="60.0dip" android:src="@drawable/icon_book_theme_4" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

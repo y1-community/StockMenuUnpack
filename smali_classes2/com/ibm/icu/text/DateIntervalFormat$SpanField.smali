@@ -1,0 +1,89 @@
+.class public final Lcom/ibm/icu/text/DateIntervalFormat$SpanField;
+.super Lcom/ibm/icu/text/UFormat$SpanField;
+.source "DateIntervalFormat.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/ibm/icu/text/DateIntervalFormat;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "SpanField"
+.end annotation
+
+
+# static fields
+.field public static final DATE_INTERVAL_SPAN:Lcom/ibm/icu/text/DateIntervalFormat$SpanField;
+
+.field private static final serialVersionUID:J = -0x57dbcd24e594d8d5L
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 2
+
+    .line 371
+    new-instance v0, Lcom/ibm/icu/text/DateIntervalFormat$SpanField;
+
+    const-string v1, "date-interval-span"
+
+    invoke-direct {v0, v1}, Lcom/ibm/icu/text/DateIntervalFormat$SpanField;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lcom/ibm/icu/text/DateIntervalFormat$SpanField;->DATE_INTERVAL_SPAN:Lcom/ibm/icu/text/DateIntervalFormat$SpanField;
+
+    return-void
+.end method
+
+.method private constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 374
+    invoke-direct {p0, p1}, Lcom/ibm/icu/text/UFormat$SpanField;-><init>(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected readResolve()Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/InvalidObjectException;
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    .line 386
+    invoke-virtual {p0}, Lcom/ibm/icu/text/DateIntervalFormat$SpanField;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/ibm/icu/text/DateIntervalFormat$SpanField;->DATE_INTERVAL_SPAN:Lcom/ibm/icu/text/DateIntervalFormat$SpanField;
+
+    invoke-virtual {v1}, Lcom/ibm/icu/text/DateIntervalFormat$SpanField;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-object v1
+
+    .line 389
+    :cond_0
+    new-instance v0, Ljava/io/InvalidObjectException;
+
+    const-string v1, "An invalid object."
+
+    invoke-direct {v0, v1}, Ljava/io/InvalidObjectException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method

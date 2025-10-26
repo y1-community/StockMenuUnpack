@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/rl_shuffle" android:layout_width="fill_parent" android:layout_height="@dimen/main_item_height" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_shuffle" android:padding="5.0dip" android:layout_width="160.0dip" android:layout_height="fill_parent" android:text="@string/shuffle" android:layout_weight="1.0" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/shuffle_on_off" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="on" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_repeat" android:layout_width="fill_parent" android:layout_height="@dimen/main_item_height" android:layout_weight="1.0" app:layout_constraintTop_toBottomOf="@id/rl_shuffle">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_repeat" android:padding="5.0dip" android:layout_width="160.0dip" android:layout_height="fill_parent" android:text="@string/repeat" android:layout_weight="1.0" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/repeat_on_off" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="off" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_speed" android:layout_width="fill_parent" android:layout_height="@dimen/main_item_height" android:layout_weight="1.0" app:layout_constraintTop_toBottomOf="@id/rl_repeat">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_speed" android:padding="5.0dip" android:layout_width="160.0dip" android:layout_height="fill_parent" android:text="@string/speed" android:layout_weight="1.0" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/speed_slow_fast" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="nomal" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/rl_timing" android:layout_width="fill_parent" android:layout_height="@dimen/main_item_height" android:layout_weight="1.0" app:layout_constraintTop_toBottomOf="@id/rl_speed">
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_timing" android:padding="5.0dip" android:layout_width="160.0dip" android:layout_height="fill_parent" android:text="@string/timing" android:layout_weight="1.0" />
+        <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/timing_on_off" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="20min" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
