@@ -65,7 +65,7 @@
 .method public final defaultLanguage()I
     .locals 6
 
-    const-string v0, "fr"
+    const-string v0, "en"
 
     .line 22
     move-object v1, v0
@@ -181,171 +181,28 @@
 .end method
 
 .method public final isRockBox()Z
-    .locals 5
+    .locals 1
 
     .line 12
-    sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
-
-    const-string v1, "general"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "this as java.lang.String).toLowerCase(Locale.ROOT)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/CharSequence;
-
-    const-string v1, "rockbox"
-
-    check-cast v1, Ljava/lang/CharSequence;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x0
-
-    invoke-static {v0, v1, v2, v3, v4}, Lkotlin/text/StringsKt;->contains$default(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
-
-    move-result v0
+    const/4 v0, 0x1
 
     return v0
 .end method
 
 .method public final isShowEbook()Z
-    .locals 8
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [Ljava/lang/String;
-
-    const-string v1, "es"
-
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    const-string v1, "de"
-
-    const/4 v3, 0x1
-
-    aput-object v1, v0, v3
-
-    const/4 v1, 0x2
-
-    const-string v4, "fr"
-
-    aput-object v4, v0, v1
+    .locals 1
 
     .line 18
-    invoke-static {v0}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+    const/4 v0, 0x1
 
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Iterable;
-
-    .line 30
-    instance-of v5, v0, Ljava/util/Collection;
-
-    if-eqz v5, :cond_1
-
-    move-object v5, v0
-
-    check-cast v5, Ljava/util/Collection;
-
-    invoke-interface {v5}, Ljava/util/Collection;->isEmpty()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_1
-
-    :cond_0
-    const/4 v2, 0x1
-
-    goto :goto_0
-
-    .line 31
-    :cond_1
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_2
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v5
-
-    if-eqz v5, :cond_0
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Ljava/lang/String;
-
-    .line 18
-    sget-object v6, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
-
-    invoke-virtual {v4, v6}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string v7, "this as java.lang.String).toLowerCase(Locale.ROOT)"
-
-    invoke-static {v6, v7}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v6, Ljava/lang/CharSequence;
-
-    check-cast v5, Ljava/lang/CharSequence;
-
-    const/4 v7, 0x0
-
-    invoke-static {v6, v5, v2, v1, v7}, Lkotlin/text/StringsKt;->contains$default(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
-
-    move-result v5
-
-    xor-int/2addr v5, v3
-
-    if-nez v5, :cond_2
-
-    :goto_0
-    return v2
+    return v0
 .end method
 
 .method public final isV4()Z
-    .locals 5
+    .locals 1
 
     .line 10
-    sget-object v0, Ljava/util/Locale;->ROOT:Ljava/util/Locale;
-
-    const-string v1, "general"
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const-string v1, "this as java.lang.String).toLowerCase(Locale.ROOT)"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast v0, Ljava/lang/CharSequence;
-
-    const-string v1, "v4"
-
-    check-cast v1, Ljava/lang/CharSequence;
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x0
-
-    invoke-static {v0, v1, v2, v3, v4}, Lkotlin/text/StringsKt;->contains$default(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z
-
-    move-result v0
+    const/4 v0, 0x1
 
     return v0
 .end method

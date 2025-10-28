@@ -10,15 +10,15 @@
 
 .field public static final DEBUG:Z = false
 
-.field public static final FLAVOR:Ljava/lang/String; = "frGeneral"
+.field public static final FLAVOR:Ljava/lang/String; = "enUniversal"
 
-.field public static final FLAVOR_language:Ljava/lang/String; = "fr"
+.field public static final FLAVOR_language:Ljava/lang/String; = "en"
 
-.field public static final FLAVOR_platform:Ljava/lang/String; = "general"
+.field public static final FLAVOR_platform:Ljava/lang/String; = "universal"
 
 .field public static final VERSION_CODE:I = 0x110
 
-.field public static final VERSION_NAME:Ljava/lang/String; = "FR_2.7.2"
+.field public static final VERSION_NAME:Ljava/lang/String; = "EN_UNIVERSAL_2.7.2"
 
 
 # direct methods
