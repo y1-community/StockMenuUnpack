@@ -68,6 +68,27 @@
     .locals 3
 
     .line 32
+    sget-object v0, Lcom/innioasis/y1/utils/SharedPreferencesUtils;->INSTANCE:Lcom/innioasis/y1/utils/SharedPreferencesUtils;
+
+    invoke-virtual {v0}, Lcom/innioasis/y1/utils/SharedPreferencesUtils;->getAppFirstUse()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v0, Landroid/content/Intent;
+
+    invoke-virtual {p0}, Lcom/innioasis/y1/activity/SplashActivity;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    const-class v2, Lcom/innioasis/y1/activity/LanguageActivity;
+
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    goto :goto_0
+
+    :cond_0
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Lcom/innioasis/y1/activity/SplashActivity;->getContext()Landroid/content/Context;
@@ -78,6 +99,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
+    :goto_0
     const/high16 v1, 0x10000000
 
     .line 33
