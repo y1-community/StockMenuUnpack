@@ -390,7 +390,7 @@ completed successfully"</string>
     <string name="setting_key_lock_off_info">In the power-saving working mode (screen off), press any key will immediately execute the corresponding action command.</string>
     <string name="setting_key_lock_on_info">In the power-saving working mode (screen off), press any key to light up the screen first, and press the key again to execute the corresponding action command.</string>
     <string name="setting_language">Language</string>
-    <string name="setting_launcher">Launcher</string>
+    <string name="setting_launcher">Rockbox</string>
     <string name="setting_repeat_all">List loop</string>
     <string name="setting_repeat_off">Off</string>
     <string name="setting_repeat_one">Single loop</string>

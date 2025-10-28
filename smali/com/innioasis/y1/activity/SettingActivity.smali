@@ -2871,7 +2871,7 @@
 
     move-result-object v0
 
-    const-string v1, "su -c /data/local/tmp/toggle-launcher.sh"
+    const-string v1, "su -c /data/data/switch-to-stock.sh"
 
     invoke-virtual {v0, v1}, Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
 
