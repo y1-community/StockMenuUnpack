@@ -2863,80 +2863,39 @@
 .end method
 
 .method private final selectLauncher()V
-    .locals 4
+    .locals 3
 
     .line 1489
-    invoke-virtual {p0}, Lcom/innioasis/y1/activity/SettingActivity;->getContext()Landroid/content/Context;
+    :try_start_0
+    invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    const-string v1, "su -c /data/local/tmp/toggle-launcher.sh"
+
+    invoke-virtual {v0, v1}, Ljava/lang/Runtime;->exec(Ljava/lang/String;)Ljava/lang/Process;
 
     move-result-object v0
 
-    .line 1490
-    new-instance v1, Landroid/content/Intent;
-
-    const-string v2, "android.intent.action.MAIN"
-
-    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const-string v2, "android.intent.category.HOME"
-
-    .line 1491
-    invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
-
-    const/high16 v2, 0x10000
-
-    .line 1493
-    invoke-virtual {v0, v1, v2}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
-
-    move-result-object v2
-
-    const-string v3, "pm.queryIntentActivities\u2026nager.MATCH_DEFAULT_ONLY)"
-
-    invoke-static {v2, v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1494
-    check-cast v2, Ljava/lang/Iterable;
-
-    .line 1524
-    invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Landroid/content/pm/ResolveInfo;
-
-    .line 1495
-    iget-object v3, v3, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
-
-    iget-object v3, v3, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
-
-    .line 1496
-    invoke-virtual {v0, v3}, Landroid/content/pm/PackageManager;->clearPackagePreferredActivities(Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/Process;->waitFor()I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    :cond_0
-    const/high16 v0, 0x10000000
+    :catch_0
+    move-exception v0
 
-    .line 1498
-    invoke-virtual {v1, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+    .line 1490
+    sget-object v1, Ltimber/log/Timber;->Forest:Ltimber/log/Timber$Forest;
 
-    .line 1499
-    invoke-virtual {p0, v1}, Lcom/innioasis/y1/activity/SettingActivity;->startActivity(Landroid/content/Intent;)V
+    const/4 v2, 0x0
 
+    new-array v2, v2, [Ljava/lang/Object;
+
+    invoke-virtual {v1, v0, v2}, Ltimber/log/Timber$Forest;->e(Ljava/lang/Throwable;[Ljava/lang/Object;)V
+
+    :goto_0
     return-void
 .end method
 
